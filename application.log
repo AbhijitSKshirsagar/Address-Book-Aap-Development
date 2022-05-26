@@ -1,0 +1,18 @@
+2022-05-27 00:02:20.315  INFO 11892 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Starting AddressBookApplication using Java 1.8.0_20 on DESKTOP-696TCVJ with PID 11892 (C:\Users\AMOL\IdeaProjects\AddressBook\target\classes started by AMOL in C:\Users\AMOL\IdeaProjects\AddressBook)
+2022-05-27 00:02:20.325 DEBUG 11892 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-05-27 00:02:20.327  INFO 11892 --- [restartedMain] c.e.addressbook.AddressBookApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-05-27 00:02:25.983  WARN 11892 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-27 00:02:26.629  INFO 11892 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Started AddressBookApplication in 7.415 seconds (JVM running for 9.809)
+2022-05-27 00:02:26.638  INFO 11892 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Address Book App Started
+2022-05-27 00:05:07.467  INFO 9680 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Starting AddressBookApplication using Java 1.8.0_20 on DESKTOP-696TCVJ with PID 9680 (C:\Users\AMOL\IdeaProjects\AddressBook\target\classes started by AMOL in C:\Users\AMOL\IdeaProjects\AddressBook)
+2022-05-27 00:05:07.470 DEBUG 9680 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-05-27 00:05:07.472  INFO 9680 --- [restartedMain] c.e.addressbook.AddressBookApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-05-27 00:05:13.666  WARN 9680 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-27 00:05:14.334  INFO 9680 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Started AddressBookApplication in 7.784 seconds (JVM running for 9.874)
+2022-05-27 00:05:14.341  INFO 9680 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Address Book App Started
+2022-05-27 00:05:45.562  INFO 4068 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Starting AddressBookApplication using Java 1.8.0_20 on DESKTOP-696TCVJ with PID 4068 (C:\Users\AMOL\IdeaProjects\AddressBook\target\classes started by AMOL in C:\Users\AMOL\IdeaProjects\AddressBook)
+2022-05-27 00:05:45.565 DEBUG 4068 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-05-27 00:05:45.567  INFO 4068 --- [restartedMain] c.e.addressbook.AddressBookApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-05-27 00:05:51.700  WARN 4068 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-27 00:05:52.505  INFO 4068 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Started AddressBookApplication in 7.919 seconds (JVM running for 10.185)
+2022-05-27 00:05:52.512  INFO 4068 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Address Book App Started
