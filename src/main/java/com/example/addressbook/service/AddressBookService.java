@@ -37,8 +37,8 @@ public class AddressBookService implements IAddressbookService {
     @Override
     public AddressbookData updateAddressbookData(int id, AddressbookDTO addressbookDTO) {
         AddressbookData addressbookData=this.getAddressbookDataById(id);
-        addressbookData.setfName(addressbookDTO.getFName());
-        addressbookData.setlName(addressbookDTO.getLName());
+        addressbookData.setFName(addressbookDTO.getFName());
+        addressbookData.setLName(addressbookDTO.getLName());
         addressbookData.setPhoneNumber(addressbookData.getPhoneNumber());
         addressbookData.setEmail(addressbookData.getEmail());
         addressbookData.setAddress(addressbookDTO.getAddress());
