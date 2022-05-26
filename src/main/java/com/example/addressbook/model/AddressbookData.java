@@ -87,8 +87,8 @@ public class AddressbookData {
 
     public AddressbookData(int id, AddressbookDTO addressbookDTO) {
         this.id = id;
-        this.fName = addressbookDTO.getfName();
-        this.lName = addressbookDTO.getlName();
+        this.fName = addressbookDTO.getFName();
+        this.lName = addressbookDTO.getLName();
         this.phoneNumber = addressbookDTO.getPhoneNumber();
         this.email = addressbookDTO.getEmail();
         this.address = addressbookDTO.getAddress();
