@@ -3,9 +3,19 @@ package com.example.addressbook.model;
 import com.example.addressbook.dto.AddressbookDTO;
 import lombok.Data;
 
-public @Data class AddressbookData {
+import javax.persistence.*;
+
+@Entity
+@Data
+@Table(name = "addressbookDetails")
+public class AddressbookData {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "addressbook_id")
     private int id;
+    @Column(name = "firstName")
     private String fName;
+    @Column(name = "lastName")
     private String lName;
     private String phoneNumber;
     private String email;
@@ -13,8 +23,7 @@ public @Data class AddressbookData {
     private String city;
     private String state;
     private int zipCode;
-
-
+    private String country;
     public AddressbookData(int id, AddressbookDTO addressbookDTO) {
         this.id = id;
         this.fName = addressbookDTO.getFName();
@@ -25,6 +34,7 @@ public @Data class AddressbookData {
         this.city = addressbookDTO.getCity();
         this.state = addressbookDTO.getState();
         this.zipCode = addressbookDTO.getZipCode();
+        this.country=addressbookDTO.getCountry();
     }
 
     public AddressbookData() {
