@@ -1,6 +1,7 @@
 package com.example.addressbook.service;
 
 import com.example.addressbook.dto.AddressbookDTO;
+import com.example.addressbook.exception.AddressbookException;
 import com.example.addressbook.model.AddressbookData;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +19,8 @@ public class AddressBookService implements IAddressbookService {
 
     @Override
     public AddressbookData getAddressbookDataById(int id) {
-        return addressbookDataList.get(id-1);
+        return addressbookDataList.stream().filter(addressbookData -> addressbookData.getId() == id)
+                .findFirst().orElseThrow(()-> new AddressbookException("Exception Not Found!!"));
     }
 
     @Override
@@ -29,13 +31,7 @@ public class AddressBookService implements IAddressbookService {
     }
 
     @Override
-    public AddressbookData updateAddressbookData(AddressbookDTO addressbookDTO) {
-        return null;
-    }
-
-
-    @Override
-    public AddressbookData updateAddressbookData(int id, AddressbookDTO addressbookDTO) {
+    public AddressbookData updateAddressbookData(int id,AddressbookDTO addressbookDTO) {
         AddressbookData addressbookData=this.getAddressbookDataById(id);
         addressbookData.setFName(addressbookDTO.getFName());
         addressbookData.setLName(addressbookDTO.getLName());

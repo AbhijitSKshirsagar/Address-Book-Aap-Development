@@ -13,7 +13,7 @@ public class AddressbookData {
     private String address;
     private String city;
     private String state;
-    private long zipCode;
+    private int zipCode;
 
 
     public AddressbookData(int id, AddressbookDTO addressbookDTO) {
