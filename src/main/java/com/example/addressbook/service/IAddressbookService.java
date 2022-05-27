@@ -6,6 +6,7 @@ import com.example.addressbook.model.AddressbookData;
 import java.util.List;
 
 public interface IAddressbookService {
+
     List<AddressbookData> getAddressbookData();
     AddressbookData getAddressbookDataById(int id);
     AddressbookData createAddressbookData(AddressbookDTO addressbookDTO);

@@ -24,7 +24,7 @@ public class AddressbookData {
     private String state;
     private int zipCode;
     private String country;
-    public AddressbookData(int id, AddressbookDTO addressbookDTO) {
+    public void updateAddressbookData(AddressbookDTO addressbookDTO) {
         this.id = id;
         this.fName = addressbookDTO.getFName();
         this.lName = addressbookDTO.getLName();
@@ -38,5 +38,8 @@ public class AddressbookData {
     }
 
     public AddressbookData() {
+    }
+    public AddressbookData(AddressbookDTO addressbookDTO) {
+        this.updateAddressbookData(addressbookDTO);
     }
 }
