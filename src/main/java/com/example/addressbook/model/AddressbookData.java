@@ -3,8 +3,7 @@ package com.example.addressbook.model;
 import com.example.addressbook.dto.AddressbookDTO;
 import lombok.Data;
 
-@Data
-public class AddressbookData {
+public @Data class AddressbookData {
     private int id;
     private String fName;
     private String lName;

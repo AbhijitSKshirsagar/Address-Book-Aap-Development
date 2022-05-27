@@ -1,13 +1,14 @@
 package com.example.addressbook.dto;
 
 import lombok.Data;
+import lombok.ToString;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
-@Data
-public class AddressbookDTO {
+
+public @Data class AddressbookDTO {
     @Pattern(regexp = "^[A-Z]{1}[a-zA-Z\\s]{2,}$",message ="Addressbook author first name pattern is invalid")
     public String fName;
     @Pattern(regexp = "^[A-Z]{1}[a-zA-Z\\s]{2,}$",message ="Addressbook author last name pattern is invalid")
@@ -23,4 +24,6 @@ public class AddressbookDTO {
     public String state;
     @Pattern(regexp = "^[1-9]{1}[0-9]{5}$", message = "zipcode is invalid")
     public int zipCode;
+    @NotBlank(message = "country name should not be empty")
+    public String country;
 }
