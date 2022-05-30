@@ -22,10 +22,10 @@ public class AddressbookData {
     private String address;
     private String city;
     private String state;
-    private int zipCode;
+    private String zipCode;
     private String country;
     public void updateAddressbookData(AddressbookDTO addressbookDTO) {
-        this.id = id;
+        //this.id = id;
         this.fName = addressbookDTO.getFName();
         this.lName = addressbookDTO.getLName();
         this.phoneNumber = addressbookDTO.getPhoneNumber();
@@ -42,4 +42,5 @@ public class AddressbookData {
     public AddressbookData(AddressbookDTO addressbookDTO) {
         this.updateAddressbookData(addressbookDTO);
     }
+
 }

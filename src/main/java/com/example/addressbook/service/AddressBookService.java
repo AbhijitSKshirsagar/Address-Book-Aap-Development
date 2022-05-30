@@ -1,14 +1,16 @@
 package com.example.addressbook.service;
 
 import com.example.addressbook.dto.AddressbookDTO;
+import com.example.addressbook.dto.ResponseDTO;
 import com.example.addressbook.exception.AddressbookException;
 import com.example.addressbook.model.AddressbookData;
 import com.example.addressbook.repository.AddressbookRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -20,6 +22,16 @@ public class AddressBookService implements IAddressbookService {
 
     public List<AddressbookData> getAddressbookData() {
         return addressbookRepository.findAll();
+    }
+
+    @Override
+    public List<AddressbookData> sortAddressBookByCity() {
+        return addressbookRepository.sortByCity();
+    }
+
+    @Override
+    public List<AddressbookData> sortAddressBookByState() {
+        return addressbookRepository.sortByState();
     }
 
     @Override
@@ -46,4 +58,6 @@ public class AddressBookService implements IAddressbookService {
         AddressbookData addressbookData=this.getAddressbookDataById(id);
         addressbookRepository.delete(addressbookData);
     }
+
+
 }
